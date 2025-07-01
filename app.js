@@ -71,5 +71,6 @@ app.post("/submit-admission", async (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+import serverless from 'serverless-http';
+export const handler = serverless(app);
