@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Admission Verification</h2>
+    <form method="POST" action="/submit-admission">
+      <input type="hidden" name="student_id" value="<%= studentId %>">
+      <input type="text" name="surname" placeholder="Surname / Last Name" required>
+      <input type="text" name="application_number" placeholder="Application Number" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
